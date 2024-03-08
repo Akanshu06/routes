@@ -1,0 +1,9 @@
+<form action="/main" method="post" 
+onSubmit="()=>{
+    localStorage.setItem('message', document.getElementById('message').value)
+    document.getElementById('username').value=localStorage.getItem('username');
+}">
+        <input type="text" name="message" id="message">
+        <input type="hidden" name="username" id="username">
+        <button type="submit">Send</button>
+    </form>
